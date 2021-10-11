@@ -1,0 +1,581 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900,&display=swap");
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"),
+		url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"),
+		url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	font-family: "Roboto";
+	padding: 30px;
+}
+
+/* ------------------------------ */
+.main {
+	margin: 0px 0px 50px 0px;
+}
+.header {
+	background: rgb(30, 255, 116);
+}
+.title {
+	color: rgb(243, 28, 82);
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	margin: 0px 0px 40px 0px;
+}
+/* ...................................................... */
+.conteiner {
+	font-size: 25px;
+}
+.title__one {
+	color: rgb(243, 28, 82);
+	font-size: 30px;
+	text-align: center;
+	font-weight: 500;
+	margin: 0px 0px 40px 0px;
+}
+/* 11111111111111111111111111111111111111111111111111111 */
+.block__link {
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+	background-color: orange;
+	border-radius: 20px;
+	width: 200px;
+}
+.link {
+	color: #fff;
+}
+
+/* 22222222222222222222222222222222222222222222222222222 */
+.block__link-visited {
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+	background-color: orange;
+	border-radius: 20px;
+	width: 300px;
+}
+.link__visited {
+	color: #fff;
+}
+.link__visited:visited {
+	color: rgb(82, 128, 255);
+}
+
+/* 33333333333333333333333333333333333333333333333333333 */
+.block__link-hover {
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+	background-color: orange;
+	border-radius: 20px;
+	width: 600px;
+}
+.block__link-hover:hover .link__hover {
+	display: inline-block;
+	margin: 0px 0px 20px 0px;
+	background-color: rgb(20, 16, 7);
+	border-radius: 20px;
+	color: red;
+}
+.link__hover {
+	color: #fff;
+}
+.link__hover:hover {
+	opacity: 0.5;
+}
+
+/* 44444444444444444444444444444444444444444444444444444 */
+.block__link-focus {
+	padding: 30px;
+	background-color: orange;
+	margin: 0px 0px 20px 0px;
+	border-radius: 20px;
+	width: 700px;
+}
+.link__focus {
+	color: #fff;
+}
+.link__focus:focus {
+	outline: none;
+	display: inline-block;
+	color: #fff;
+	border: 5px dashed rgb(250, 11, 11);
+}
+
+/* 55555555555555555555555555555555555555555555555555555 */
+
+.link__active {
+	display: inline-block;
+	color: #fff;
+	background-color: orange;
+	border-radius: 20px;
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+}
+
+.link__active:active {
+	display: inline-block;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.658);
+	border-radius: 20px;
+	padding: 30px;
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+	box-shadow: 10px -17px 5px -8px rgba(0, 0, 0, 0.589);
+}
+
+/* Кнопка со всеми псевдоклассами состояния */
+.button__box {
+	display: inline-block;
+	border: 10px solid orange;
+	padding: 30px;
+	border-radius: 20px;
+	margin: 0px 0px 50px 0px;
+}
+.button {
+	display: inline-block;
+	background-color: rgba(255, 166, 0, 0.753);
+	padding: 20px;
+	border-radius: 20px;
+	color: #fff;
+	text-align: center;
+	border: 5px solid rgb(0, 0, 0);
+}
+.button:visited {
+	display: inline-block;
+	background-color: rgb(255, 166, 0);
+	padding: 20px;
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+.button:hover {
+	display: inline-block;
+	background-color: rgb(255, 166, 0);
+	padding: 20px;
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: underline;
+	border: 5px solid transparent;
+}
+.button:focus {
+	outline: none;
+	display: inline-block;
+	background-color: rgb(255, 166, 0);
+	padding: 20px;
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: underline;
+	border: 5px solid rgb(255, 99, 99);
+}
+.button:active {
+	outline: none;
+	display: inline-block;
+	background-color: rgb(50, 81, 255);
+	padding: 20px;
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: underline;
+	border: 3px solid rgb(219, 45, 235);
+	box-shadow: 0px 5px 10px 2px rgb(28, 50, 66);
+}
+
+/* ................Псевдоклассы положения.............. */
+
+/* ..........Обращение к первому элементу в блоке....... */
+.title__two {
+	color: rgb(243, 28, 82);
+	font-size: 30px;
+	text-align: center;
+	font-weight: 500;
+	margin: 0px 0px 40px 0px;
+}
+.box__first-child {
+	font-size: 25px;
+	color: green;
+	margin: 0px 0px 70px 0px;
+}
+
+.box__first-child p:first-child {
+	color: red;
+}
+
+/*Обращение к первому конкретноиу тегу даже если выше него есть другие*/
+.box__first-of-type {
+	font-size: 25px;
+	color: rgb(0, 2, 128);
+	margin: 0px 0px 70px 0px;
+}
+
+.box__first-of-type p:first-of-type {
+	color: yellow;
+}
+
+/* Обращение к любому первому обьекту внутри родителя */
+.box__first-child-object {
+	font-size: 25px;
+	color: rgb(2, 148, 141);
+	margin: 0px 0px 70px 0px;
+}
+.box__first-child-object *:first-child {
+	color: rgb(247, 0, 255);
+}
+
+/* Обращение к последнему элементу в блоке */
+.box__last-child {
+	font-size: 25px;
+	color: rgb(47, 73, 5);
+	margin: 0px 0px 70px 0px;
+}
+.box__last-child p:last-child {
+	color: rgb(196, 101, 101);
+}
+
+/* Обращение к последнему */
+.box__last-of-type {
+	font-size: 25px;
+	color: rgb(8, 6, 31);
+	margin: 0px 0px 70px 0px;
+}
+.box__last-of-type p:last-of-type {
+	color: rgb(174, 182, 102);
+}
+
+/* Убираем отсут у обьекта который находится последним */
+.box__last-child-margin {
+	font-size: 25px;
+	color: rgb(255, 136, 0);
+	margin: 0px 0px 70px 0px;
+}
+.box__last-child-margin *:last-child {
+	margin-bottom: 0;
+}
+
+/* Обращение к конкретным элементам в блоке */
+.box__nth-child {
+	font-size: 25px;
+	margin: 0px 0px 70px 0px;
+}
+.box__nth-child p:nth-child(odd) {
+	color: rgb(127, 255, 0);
+}
+.box__nth-child p:nth-child(even) {
+	color: rgb(0, 132, 255);
+}
+.box__nth-child p:nth-child(2) {
+	color: transparent;
+}
+.box__nth-child p:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+
+/* ................Псевдоэлементы.................... */
+
+/* Определяет стиль первого символа в тексте элемента */
+.first-letter-line {
+	font-size: 25px;
+	color: rgb(134, 76, 76);
+	margin: 0px 0px 40px 0px;
+}
+
+.first-letter-line::first-letter {
+	color: red;
+	font-size: 70px;
+}
+.first-letter-line::first-line {
+	color: rgb(55, 0, 255);
+	font-size: 25px;
+}
+
+/* ................Бифор и афтер................ */
+
+.list li {
+	color: orange;
+	font-weight: 700;
+	font-size: 20px;
+	margin: 0px 0px 15px 0px;
+}
+.list li::before {
+	content: "";
+	display: inline-block;
+	background-color: rgb(3, 219, 3);
+	width: 5px;
+	height: 20px;
+	margin: 0px 10px 0px 0px;
+	vertical-align: top;
+}
+.list li::after {
+	content: "";
+	display: inline-block;
+	background-color: rgb(3, 35, 219);
+	width: 5px;
+	height: 20px;
+	margin: 0px 0px 0px 10px;
+	vertical-align: top;
+}
+.list li:hover::before {
+	content: "";
+	display: inline-block;
+	background-color: rgb(3, 35, 219);
+	width: 5px;
+	height: 20px;
+	margin: 0px 10px 0px 0px;
+	vertical-align: top;
+}
+.list li:hover::after {
+	content: "";
+	display: inline-block;
+	background-color: rgb(3, 219, 3);
+	width: 5px;
+	height: 20px;
+	margin: 0px 0px 0px 10px;
+	vertical-align: top;
+}
+
+/* ..................ДЗ 1...................... */
+.conteiner__sed {
+	width: 1030px;
+	color: #4b4b4b;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 40px 0px;
+}
+.titles {
+	width: 583px;
+}
+.subtitle {
+	width: 436px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5d62b5;
+	min-height: 23px;
+	margin: 0px 0px 33px 0px;
+}
+.subtitle::before {
+	content: "";
+	display: inline-block;
+	width: 28px;
+	height: 23px;
+	background: url("../img/mark.png") 0 0 no-repeat;
+	vertical-align: top;
+	margin: 0px 16px 0px 0px;
+}
+
+.title__sad {
+	width: 583px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin: 0px 0px 68px 0px;
+}
+
+/*................................... Первый блок */
+.love {
+	width: 324px;
+	display: inline-block;
+	margin: 0px 24px 0px 0px;
+}
+.love::before {
+	display: inline-block;
+	content: "";
+	width: 63px;
+	height: 63px;
+	background: url("../img/dog_love_24x.png") 0 0 no-repeat;
+	margin: 0px 23px 0px 0px;
+	vertical-align: top;
+}
+.title__love {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #f2726f;
+	margin: 7px 0px 0px 0px;
+}
+.text__love {
+	width: 235px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	margin: -20px 0px 0px 86px;
+}
+
+/* второй блок........................................... */
+.veterinarian {
+	display: inline-block;
+	width: 324px;
+	margin: 0px 24px 0px 0px;
+	vertical-align: top;
+}
+.veterinarian::before {
+	display: inline-block;
+	content: "";
+	width: 63px;
+	height: 63px;
+	background: url("../img/dog_vet_24x.png") 0 0 no-repeat;
+	margin: 0px 23px 0px 0px;
+	vertical-align: top;
+}
+
+.title__veterinarian {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #f2726f;
+	margin: 7px 0px 0px 0px;
+}
+.text__veterinarian {
+	width: 235px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	margin: -20px 0px 0px 86px;
+}
+
+/* третий блок */
+.live__stream {
+	display: inline-block;
+	width: 324px;
+	margin: 0px 0px 0px 0px;
+	vertical-align: top;
+}
+.live__stream::before {
+	display: inline-block;
+	content: "";
+	width: 63px;
+	height: 63px;
+	background: url("../img/dog_stream_24x.png") 0 0 no-repeat;
+	margin: 0px 23px 0px 0px;
+	vertical-align: top;
+}
+
+.title__live {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #f2726f;
+	margin: 7px 0px 0px 0px;
+}
+.text__live {
+	width: 235px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	margin: -20px 0px 0px 86px;
+}
+
+/* ................последний бок................... */
+.conteiner__choose {
+	font-family: "Helvetica Neue";
+	background: #252525;
+	width: 255px;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 24px 24px 60px 24px;
+	border-radius: 10px;
+}
+.title__choose {
+	width: 207px;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	color: #ffffff;
+	margin: 0px 0px 26px 0px;
+
+	/* padding: 0px 0px 6px 0px; */
+}
+.title__choose::after {
+	content: "";
+	display: block;
+	width: 52px;
+	height: 2px;
+	background: #34c759;
+	margin: 23px 0px 0px 0px;
+}
+
+.text__choose {
+	width: 207px;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+}
